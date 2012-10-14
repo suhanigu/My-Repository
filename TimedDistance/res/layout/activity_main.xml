@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".GPSActivity" >
+
+    <TextView
+        android:id="@+id/displaytext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#789562" />
+
+    <EditText
+        android:id="@+id/displaydist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#789562" />
+
+    <EditText
+        android:id="@+id/displaytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btntimer"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#789562" />
+
+    <Button
+        android:id="@+id/btntimer"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displaytext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="Start Timer" />
+
+</RelativeLayout>

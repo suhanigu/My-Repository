@@ -1,0 +1,115 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=17188, tid=10296
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b147
+# Java VM: Java HotSpot(TM) Client VM (21.0-b17 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01f7a000):  JavaThread "Unknown thread" [_thread_in_vm, id=10296, stack(0x00370000,0x003c0000)]
+
+Stack: [0x00370000,0x003c0000],  sp=0x003bef90,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [kernel32.dll+0x1339a]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x39ef2]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x39ec5]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x01f7a000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=10296, stack(0x00370000,0x003c0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00270000 - 0x0029f000 	C:\Program Files (x86)\Java\jre7\bin\javaw.exe
+0x76f20000 - 0x770a0000 	C:\Windows\SysWOW64\ntdll.dll
+0x74ce0000 - 0x74df0000 	C:\Windows\syswow64\kernel32.dll
+0x74750000 - 0x74796000 	C:\Windows\syswow64\KERNELBASE.dll
+0x74a30000 - 0x74ad0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x748f0000 - 0x7499c000 	C:\Windows\syswow64\msvcrt.dll
+0x75390000 - 0x753a9000 	C:\Windows\SysWOW64\sechost.dll
+0x74ad0000 - 0x74bc0000 	C:\Windows\syswow64\RPCRT4.dll
+0x74600000 - 0x74660000 	C:\Windows\syswow64\SspiCli.dll
+0x745f0000 - 0x745fc000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x753b0000 - 0x754b0000 	C:\Windows\syswow64\USER32.dll
+0x749a0000 - 0x74a30000 	C:\Windows\syswow64\GDI32.dll
+0x74ee0000 - 0x74eea000 	C:\Windows\syswow64\LPK.dll
+0x75610000 - 0x756ad000 	C:\Windows\syswow64\USP10.dll
+0x727d0000 - 0x7296e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x75980000 - 0x759d7000 	C:\Windows\syswow64\SHLWAPI.dll
+0x74bf0000 - 0x74c50000 	C:\Windows\system32\IMM32.DLL
+0x74df0000 - 0x74ebc000 	C:\Windows\syswow64\MSCTF.dll
+0x613d0000 - 0x6148e000 	C:\Program Files (x86)\Java\jre7\bin\msvcr100.dll
+0x59130000 - 0x59451000 	C:\Program Files (x86)\Java\jre7\bin\client\jvm.dll
+0x73c90000 - 0x73c97000 	C:\Windows\system32\WSOCK32.dll
+0x75340000 - 0x75375000 	C:\Windows\syswow64\WS2_32.dll
+0x746f0000 - 0x746f6000 	C:\Windows\syswow64\NSI.dll
+0x73070000 - 0x730a2000 	C:\Windows\system32\WINMM.dll
+0x76ef0000 - 0x76ef5000 	C:\Windows\syswow64\PSAPI.DLL
+0x709c0000 - 0x709cc000 	C:\Program Files (x86)\Java\jre7\bin\verify.dll
+0x62640000 - 0x62660000 	C:\Program Files (x86)\Java\jre7\bin\java.dll
+0x61360000 - 0x61373000 	C:\Program Files (x86)\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Android\platforms\android-15\android.jar 
+java_command: messenger.app.MessengerActivity
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.7.0
+CLASSPATH=C:\Program Files (x86)\Java\jdk1.7.0\lib
+PATH=C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;c:\cygwin\bin;c:\cygwin\usr\bin;C:\Program Files (x86)\Java\jdk1.7.0\bin;C:\cygwin\bin
+USERNAME=suhanigu
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 4106416k(484188k free), swap 9026192k(870852k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b17) for windows-x86 JRE (1.7.0-b147), built on Jun 27 2011 02:25:52 by "java_re" with unknown MS VC++:1600
+
+time: Thu Jan 26 19:26:42 2012
+elapsed time: 1 seconds
+
